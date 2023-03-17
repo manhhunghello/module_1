@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tien te</title>
+
+</head>
+<body>
+<input type="text" id="amount">
+<select name="" id="select1">
+<!--  <option value="1">VND </option>-->
+<!--  <option value="23000">USD</option>-->
+<!--  <option value="3500">NDT</option>-->
+  <option value="a">VND </option>
+  <option value="b">USD</option>
+<!--  <option value="3500">NDT</option>-->
+</select>
+<select name="" id="select2">
+   <!-- <option value="1">VND </option>
+    <option value="23000">USD</option>
+    <option value="3500">NDT</option>-->
+  <option value="a">VND </option>
+  <option value="b">USD</option>
+  <!--  <option value="3500">NDT</option>-->
+</select>
+<button onclick="khongCoGi()">Convert</button>
+<script>
+  function khongCoGi(){
+
+    let dauvao = document.getElementById("amount").value;
+    let select1=document.getElementById("select1").value;
+    let select2=document.getElementById("select2").value;
+    console.log(select1);
+    console.log(select2);
+    /*if (select1===select2){
+      alert(dauvao);
+    }
+    if(select1 === "a"&& select2 === "b"){
+      alert(dauvao/23000);
+    }
+    if(select1 === "b"&& select2 === "a"){
+      alert(dauvao * 23000);*/
+    //}
+    if (select1 === select2 ){
+      alert(dauvao);
+    }
+    else {
+      if (select1=="a"){
+        alert(dauvao/23000);
+      }
+      else {
+        alert(dauvao * 23000);
+      }
+    }
+
+
+
+  }
+</script>
+
+</body>
+</html>

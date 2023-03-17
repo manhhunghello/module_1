@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    let arr = [5, 3, 8, 2, 7]
+    let max = 0
+    let min = 0
+
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] < arr[max]) {
+            min = i;
+        }
+
+        if (arr[i] > arr[min]) {
+            max = i;
+        }
+    }
+    let temp = arr[max]
+    arr[max] = arr[min]
+    arr[min] = temp
+    console.log(arr)
+
+    // document.write("max:" + max)
+    // document.write("<br>" + "min:" + min)
+
+</script>
+</html>

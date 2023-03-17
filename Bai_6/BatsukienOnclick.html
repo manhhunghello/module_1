@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p onclick="do_something()">Click me</p>
+<p id="demo">click</p>
+<script>
+  //cach 1
+  function do_something(){
+    alert("hello world");
+  }
+  //cach 2
+  //thuc hannh bat event bang cach du dung ham addEventlisner
+  var demo = document.getElementById("demo");
+  demo.addEventListener("click", clickFunction);
+  function clickFunction(){
+    alert("Xin chao")
+  }
+
+
+</script>
+
+</body>
+</html>

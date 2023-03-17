@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>
+    <input type="text" placeholder="Nhap doanh thu" id="sotien">
+</label>
+<button onclick="ketqua() ">Hoa Hong Nhan Duoc</button>
+<p id="result"></p>
+</body>
+<script>
+    function ketqua() {
+        let sotien = document.getElementById("sotien").value
+        console.log(sotien)
+        let a = sotien * 5 / 100;
+        let b = sotien * 7 / 100;
+        let c = sotien * 10 / 100;
+
+
+        if (sotien < 50) {
+            alert("Khong co doanh thu")
+        } else if (sotien>50) {
+            document.getElementById("result").innerHTML = "hoa hong la:" + a + "tr"
+        } else if (sotien > 100) {
+            document.getElementById("result").innerHTML = "hoa hong la:" + b + "tr"
+        } else if (sotien > 150) {
+            document.getElementById("result").innerHTML = "hoa hong la:" + c + "tr"
+        }
+
+
+    }
+
+
+</script>
+</html>

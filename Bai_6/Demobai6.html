@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> Select a new car from the list.</p>
+    <select id="mySelect" onchange="do_something()">
+        <option value="Audi" ></option>
+        <option value="BMW" ></option>
+        <option value="Merceder" ></option>
+        <option value="Volvo" ></option>
+        </select>
+<!--Cach 1-->
+        <script>
+            //Bat su kien cach 1
+            function do_something()   { //dinh nghia ham dosomething, day la ham do chung ta dinh nghia
+               var selectedValue = document.getElementById("mySelect").value;
+               //trong ham do_somethong khai bao bien selecterVlaue de luu tru Value cua element
+                alert(selectedValue);//hien thi hop thoai canh bao
+
+            }
+            //Bat dau bat su kien Cach 2 xoa phan onchange di
+            var selectedElement = document.getElementById("mySelect");
+                    //khai báo id của thẻ select là mySelect,
+                   // trong mã java script sử dụng hàm getelmentById để
+                  //   lấy ra thành phần có id là mySelect
+
+            selectedElement.addEventListener("change",changeFunction);
+                         //Gán select trong elment.
+                          //Bắt event trên bằng cắt sửa dụng hàm addEventLisstener
+                           // truyeenf vao ham 2 tham số gồm change là tên sự kiện, changefungeFun là hàm sẽ được gọi
+            function changeFunction() {
+            // chaneFuncition hiển thị giá trị được chon dưới dạng alert
+
+                var selectedVlaue = document.getElementById("mySelect").value;
+                alert(selectedVlaue);
+            }
+
+        </script>
+
+</body>
+</html>
+
+
+

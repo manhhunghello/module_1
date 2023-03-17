@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Vong lap for in
+
+  // let person = { firsName:"Le ",lastName:"loi", address:"Ha nOI"};
+  // for (let p in person){
+  //   console.log(person[p])
+  // }
+
+  //Vong lap for in
+  // let webpage = "codegym.com";
+  // for (let w of webpage ){
+  //   console.log(w)
+  // }
+//vong lap for each
+//   var animal
+
+  let n = prompt("nhap number")
+  let i
+
+  let flag = true;
+  if (n<2){
+    flag=false;
+  }
+  else {
+      for (let i=2; i<n; i++){
+          if (n % i === 0){
+              flag=false;
+          }
+      }
+  }
+  if (flag===true){
+      document.write( n + "la so nguyen to")
+
+  }
+  else {
+      document.write(n + "khong phai la so nguyen to")
+  }
+
+
+
+  // let count =0
+  // while (count ++<=10){
+  //     count++;
+  // }
+  // console.log(count)
+
+
+
+
+
+
+
+
+
+  // for (let i=1; i<5;i++){
+  //     for (let j = 1; j<=i  ; j++) {
+  //         document.write("*")
+  //     }
+  //
+  //     }
+  //
+  //     document.write("<br>")
+  //
+  // for (let i=5; i>=1;i--){
+  //     for (let j = 1; j<=i;j++) {
+  //         document.write("*")
+  //     }
+  //     document.write("<br>")
+  // }
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

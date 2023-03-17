@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let bcChuong
+  bcChuong ="<table border='1' >"
+  for ( let j=1; j<10;j++ ) {
+    bcChuong=bcChuong + "<tr>"
+    for (let i = 2; i <=10; i++) {
+      bcChuong=bcChuong +"<td>"
+
+      bcChuong=bcChuong + i + "x" + j + "="+(i*j)
+      bcChuong=bcChuong + "<td>"
+
+
+    }
+    bcChuong=bcChuong + "</tr>"
+
+
+  }
+  bcChuong=bcChuong+ "</table>"
+  document.write(bcChuong)
+</script>
+</body>
+</html>
