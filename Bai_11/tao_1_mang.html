@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>Title</title>
 </head>
 <body>
-$END$
+
 </body>
+<script>
+  var numbers = [];
+
+  // Lặp theo hàng
+  for (var i = 0; i < 4; i++){
+    numbers[i] = [];
+    // Lặp theo cột, số cộ từ 0 -> số lượng phần tử của hàng i
+    for (var j = 0; j < 5; j++){
+      numbers[i][j] = Math.floor((Math.random() * 10) + 1);
+    }
+  }
+ console.log(number);
+ // document.write(numbers);
+
+
+ // var numbers = [];
+ //
+ // // Lặp theo hàng
+ // for (var i = 0; i < 4; i++){
+ //   numbers[i] = [];
+ //   // Lặp theo cột, số cộ từ 0 -> số lượng phần tử của hàng i
+ //   for (var j = 0; j < 5; j++){
+ //     console.log(numbers[i][j]);
+ //   }
+ // }
+
+
+
+// var numbers = [
+//   [5, 12, 17, 9, 3],
+//   [13, 4, 8, 14, 1],
+//   [9, 6, 3, 7, 21]
+// ];
+//
+// // Lặp theo hàng
+// for (var i = 0; i < numbers.lenght; i++){
+//
+//   // Lặp theo cột, số cộ từ 0 -> số lượng phần tử của hàng i
+//   for (var j = 0; j < numbers[i].length; j++){
+//     console.log(numbers[i][j]);
+//   }
+// }
+
+
+ var numbers = [];
+ numbers.unshift([5, 12, 17, 9, 3]);
+ numbers.unshift([13, 4, 8, 14, 1]);
+ numbers.unshift([9, 6, 3, 7, 21]);
+ console.log(numbers); /// thêm vào đầu mảng 2 chiều lần lượt đổi chỗ cho nhau lên đầu
+</script>
 </html>

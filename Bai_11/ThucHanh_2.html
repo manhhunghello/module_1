@@ -1,10 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="text" id="txtValue"/>
+<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"/>
+<input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>
+<div id="result"></div>
+<p id =bt></p>
 </body>
+<script>
+    // Viết một chương trình JavaScript để thêm vào các phần tử
+    // trong một mảng và hiển thị chúng.
+    let i = 0;
+    let array = Array();
+    function add_element_to_array() {
+        array[i] = document.getElementById("txtValue").value;
+        alert("Element: " + array[i] + " Added at index " + i);
+        i++;
+        // document.getElementById("txtValue ").value = "";
+    }
+    function display_array() {
+        let e = "<hr/>";
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById("result").innerHTML = e;
+    }
+  // let arr =["1", 2 ,"a" , "b"];
+  // for (let i=0;i < arr.length ;i++) {
+  //     console.log("index=" + i + "__value=" + arr[i])
+  // }
+
+  //truy suat phan tu trong mang thong qua chi so
+  // let arr =["item1", 2 ,"item2" , "item3"];
+  // let firstValue = arr[0]
+  // console.log(firstValue)
+
+
+//   let a= new Array(3)
+//   for (let i=0; i<1;i++){
+//       a[i]=new Array(3)
+//   }
+//   a[0][0]= "ha noi"; a[0][1]= "Hai phong"
+//   a[0][1]= "bac ninh"
+// console.log(a)
+
+
+  //   let arr = [1,2,3,4]
+  // for (let i =0; i< arr.length; i++){
+  //     for (let j=0;j<arr[i].length; j++){
+  //         console.log(arr[i][j] + "<br>")
+  //     }
+  // }
+
+</script>
 </html>
