@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<input type="text" id="add" placeholder="Thêm sản phẩm">-->
+<!--<input type="submit" value="Thêm" >-->
+<p id = "show" ></p>
+</body>
+<script>
+
+  let ip14 = ["Iphone14", 500, "CHINA"]
+  let ip15 = ["iphone15", 600, "CHINA"]
+  let product = [ip14,ip15];
+  display()
+function display() {
+
+  let str = "<table>";
+  for (let i = 0; i < product.length; i++) {
+    str += "<tr>"
+    for ( let j = 0; j < product[i].length; j++) {
+      str += "<td>" + product[i][j] + "</td>"
+
+    }
+    str+= "</tr>"
+  }
+  str += "</table>"
+  document.getElementById("show").innerHTML= str;
+
+  }
+  // // function add() {
+  // //
+  // // }
+  // display(product);
+
+</script>
+</html>

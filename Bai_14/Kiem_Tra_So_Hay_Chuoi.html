@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Bài 4" onclick="bai4()"> Kiểm tra xem ký tự nhập vào có phải là ký tự số không <br>
+</body>
+<script>
+  function kiemTraSoHayChuoi(i) {
+    if(i%2 ==0 || i%2 == 1){
+      return true
+    }
+    return false
+  }
+  function bai4() {
+    let i = prompt("Nhập vào ")
+    let check = kiemTraSoHayChuoi(i)
+    if(check){
+      alert("Đây là số")
+    }else{
+      alert("Đây là chuỗi")
+    }
+  }
+</script>
+</html>
