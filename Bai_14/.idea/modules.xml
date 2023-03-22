@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Bai_11/.idea/Bai_11.iml" filepath="$PROJECT_DIR$/../Bai_11/.idea/Bai_11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Bai_14.iml" filepath="$PROJECT_DIR$/.idea/Bai_14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Bai_16/.idea/Bai_16.iml" filepath="$PROJECT_DIR$/../Bai_16/.idea/Bai_16.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Coach_Quan/.idea/Coach_Quan.iml" filepath="$PROJECT_DIR$/../../Coach_Quan/.idea/Coach_Quan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../case_study_module_1/.idea/case_study_module_1.iml" filepath="$PROJECT_DIR$/../case_study_module_1/.idea/case_study_module_1.iml" />
+    </modules>
+  </component>
+</project>

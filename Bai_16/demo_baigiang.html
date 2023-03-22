@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+
+    let person = {
+        name: ['Bob', 'Smith'],
+        age: 32,
+        gender: 'male',
+        interests: ['music', 'skiing'],
+        bio : function () {
+            alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+        },
+        greeting: function () {
+            alert('Hi! I\'m ' + this.name[0] + '.');
+        }
+    };
+    person.bio();
+
+
+    //sử dụng cách gọi hàm để khởi tạo
+    // function Student( id, name, address){ // đối tượng
+    //     this.id = id;
+    //     this.name=name;             // thuộc tính id, name, address
+    //     this.address= address;
+    //     this.getinfo = function () { // trả về thông tin của đối tượng
+    //       return "id:" + this.id + "  " + "name:"+ this.name + " " + " address:"+this.address;
+    //     }
+    // }
+    // let  student = new Student(1," Hà Mạnh Hùng" , " Hà Nội");
+    // // để khởi taọ đối tượng, truyền vào gtri id, name, address
+    //   console.log(student.getinfo());
+    // thực thi phương thức getinfo thông qua đối tượng student
+
+
+    //sử dụng object literals để khở tạo
+    let student = {
+        id: 1,
+        name: "Hà Mạnh Hùng",
+        address: "Hà Nội",
+        getInfo: function () {
+            return "id:" + this.id + "  " + "name:" + this.name + " " + " address:" + this.address
+        }
+
+    }
+    console.log(student.getInfo());
+    console.log(student.name);
+    console.log(student.id);
+
+
+    //Cách gọi hàm 1
+    //Khai báo lớp Apple với các thuộc tính type, color,
+    //phương thức getAppleInfo()
+    //Khai báo lớp Apple với các thuộc tính type, color,
+    //phương thức getAppleInfo()
+
+    // function Apple (type) {
+    //     this.type = type;
+    //     this.color = "red";
+    //     this.getInfo = getAppleInfo;
+    // }
+    //Khai báo hàm getAppleInfo()
+    //Khuyến nghị: đây là cách không nên dùng,
+    //đọc tiếp sẽ rõ
+    // function getAppleInfo() {
+    //     return this.color + ' ' + this.type + ' apple';
+    // }
+    // let apple = new Apple('macintosh');
+    // apple.color = "reddish";
+    // alert(apple.getInfo());
+    //  console.log(apple.getInfo())
+
+    //cach gọi hàm 2
+    // function Apple (type) {
+    //     this.type = type;
+    //     this.color = "red";
+    //     this.getInfo = function() {
+    //         return this.color + ' ' + this.type + ' apple';
+    //     };
+    //}
+    // let apple = new Apple('macintosh');
+    // apple.color = "reddish";
+    // alert(apple.getInfo());
+    //
+
+    //cách gọi hàm 3 tối ưu nhất
+    // function Apple (type) {
+    //     this.type = type;
+    //     this.color = "red";
+    // }
+    // Apple.prototype.getInfo = function() {
+    //     return this.color + ' ' + this.type + ' apple';
+    //
+    // };
+    // let apple = new Apple('macintosh');
+    // apple.color = "reddish";
+    // alert(apple.getInfo());
+</script>
+</html>
